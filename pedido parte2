@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>171123</title>
+    <style>
+        body {
+            margin: 0%;
+            background: rgb(48, 86, 255);
+        }
+       body  h2{
+        text-align: center;
+            font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #text{
+        }
+    p{
+        text-align: center;
+    }
+    table td, table th {
+        margin-bottom: 10px;
+        text-align: center;
+        border: 1px ;
+        padding: 1%;
+    }
+     table{
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+table caption{
+      margin-bottom: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+#eu{
+    border-radius: 100px;
+    margin: 0%;
+    width: 100px;
+    height: 100px;
+}
+#eudois{
+    border-radius: 100px;
+    margin: 0%;
+    width: 100px;
+    height: 100px;
+}
+#eut{
+    border-radius: 100px;
+    margin: 0%;
+    width: 100px;
+    height: 100px;
+}
+#inquest{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+
+
+#sim{
+        
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 45px;
+        height: 30px;
+        background: green;
+        border-radius: 5px;
+     }
+     #na{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 45px;
+        height: 30px;
+        background: red;
+        border-radius: 5px;
+     }
+     p{
+        text-align: center;
+        border-radius: 200px;
+
+        
+     }
+     .botao{
+        text-align: center;
+        margin-bottom: 20px;
+        padding-left: 10px;
+
+        border: black;
+
+     }
+    #sim:hover {
+        background: rgba(62, 3, 90, 10);
+    </style>
+  
+</head>
+
+<body>
+    <p id="roxo">
+    </p>
+    <h2 id="text">
+        Aviso importante!
+    </h2>
+        <p>
+    <img id="img" src="img/excl.PNG" alt="exclamação" width="200">
+</p>
+<table>
+    <caption>
+        <strong>
+        Ao aceitar deve estar ciente de que sou:
+    </strong>  
+    </caption>
+    <thead>
+      <tr id="z">
+     <th>carente</th>
+     <th>paranoico</th>
+     <th>meio lerdo</th>
+      </tr>
+
+    </thead>
+    <tbody>
+        <td>
+        <img id="eu" src="img/ziddd.JPG" alt="" >
+        </td>
+         <td>
+        <img id="eudois" src="img/IMG_7404.jpg" alt="">
+        </td>
+         <td>
+            <img id="eut" src="img/IMG_7678.jpg" alt="">
+        </td>
+        <td>  </td>
+
+    </tbody>
+</table>
+<p id="inquest"> <strong>Tem certeza que deseja continuar? </strong></p>
+<div id="flex">
+    <div class="botao">
+    <button id="sim"  class="but"
+    onclick="window.location.href='http://127.0.0.1:5500/indextres.html'">
+        <strong id="cor">Sim </strong>
+    </button>  
+    </div>
+</div>
+    <div class="botao">
+    <button id="na" class="but"> <strong>Não</strong> </button> </div>
+    <script>
+        document.querySelector('#na').addEventListener("mouseover", function() {
+               let h = window.innerHeight - 50;
+               let w = window.innerWidth - 50;
+               this.style.position = "absolute"
+               this.style.top = Math.random() * h + "px"
+               this.style.left = Math.random() * w + "px"
+        })
+    </script>
+</body>
+</html>
